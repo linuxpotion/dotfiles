@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+
+# INFO --------------------------------------------------------
+# Name: obios
+# Developer: Guilherme Machado
+# Version: 0.4
+#--------------------------------------------------------------
+
+
+# FUNÇÕES -----------------------------------------------------
+ctrl_c ()
+
+{
+   printf "\n\tSaindo...\n"
+   sleep 2 && exit 0
+}
+
+#--------------------------------------------------------------
+
+
+# TESTES ------------------------------------------------------
+[ $(id -u) -ne 0 ] \
+&& printf -e "\n\n\tLogue-se como root para prosseguir.\n\n" \
+&& exit 1
+#-------------------------------------------------------------
+
+
+# PROGRAMA ---------------------------------------------------
+trap ctrl_c INT
+printf "\n\n\tInstalando pacotes...\n\n"
+sleep 2s
+xbps-install openbox sakura nitrogen compton mousepad mpv xset \
+tint2 gpicview obconf lxappearance-obconf slim slim-void-theme \
+plank rofi menu-cache lxmenu-data udiskie pulseaudio pavucontrol \
+firefox cmatrix xmodmap thunar xreader scrot obmenu conky cmatrix \
+tty-clock curl xdg-utils git lxrandr lxinput cbatticon-gtk3 bc hsetroot
+sleep 2 && printf "\n\n\tInstalação completa.\n\n"
+exit 0
+#--------------------------------------------------------------

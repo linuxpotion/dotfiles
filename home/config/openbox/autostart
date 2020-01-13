@@ -1,0 +1,36 @@
+## Setando Configuração do Touchpad
+(bash /usr/bin/touchpad.sh) &
+
+## Atualizando Pastas
+(xdg-user-dirs-update) &
+
+## STAnd-aLONE sysTRAY
+## (stalonetray --dockapp-mode simple) &
+
+## Plano de Fundo
+(nitrogen --restore) &
+
+## Compton
+(compton) &
+
+## Tint2
+(tint2 -c ~/.config/tint2/tint2rc) &
+## (tint2 -c ~/.config/tint2/liness-tint2rc) &
+## (tint2 -c ~/.config/tint2/tint2rc-small) &
+## (tint2 -c ~/.config/tint2/tint2rc-default) &
+## (tint2 -c ~/.config/tint2/minima.tint2rc) &
+
+## Plank
+## (plank) &
+
+## PulseAudio
+(start-pulseaudio-x11) &
+
+## Automount para o Thunar no Openbox
+(udiskie -a) &
+
+## Conky
+## (sleep 2s && conky -c ~/.conky/block/block.conkyrc) &
+
+## MEGAsync
+## (sleep 3s && megasync) &

@@ -1,0 +1,70 @@
+   # BACKGROUND AND BORDER
+     
+    rounded = 0
+    border_width = 0
+    background_color = #242424 100
+    border_color = #ecedee 0
+     
+    # PANEL
+     
+    panel_monitor = all
+    panel_position = bottom center
+    panel_size = 100% 24
+    panel_margin = 0 0
+    panel_padding = 8 0
+    font_shadow = 0
+    panel_background_id = 1
+    wm_menu = 1
+    panel_dock = 0
+    panel_layer = bottom
+     
+     
+    # TASKBAR
+     
+    taskbar_mode = single_desktop
+    taskbar_padding = 3 3 3
+    taskbar_background_id = 0
+    #taskbar_active_background_id = 1
+     
+     
+    # TASKS
+     
+    task_icon = 0
+    task_text = 1
+    task_maximum_size = 200 24
+    task_centered = 1
+    task_padding = 8 3
+    task_font = cure 
+    task_font_color = #E65C73 25
+    task_background_id = 0
+    task_icon_asb = 100 0 0
+    # example:
+    task_active_background_id = 1
+    task_active_font_color = #E65C73 100
+    task_active_icon_asb = 100 0 0
+    urgent_nb_of_blink = 4
+     
+     
+    # SYSTRAYBAR
+     
+    systray = 0
+    systray_padding = 0 0 0
+    systray_background_id = 0
+    systray_sort = left2right
+    systray_icon_size = 22
+    systray_icon_asb = 80 0 0
+     
+     
+     
+    # TOOLTIP
+     
+    tooltip_font_color = #ecedee 100  #I Don't use this shit -_- 
+    tooltip_font = cure 6
+     
+     
+    # MOUSE ACTION ON TASK
+     
+    mouse_middle = close
+    mouse_right = none
+    mouse_scroll_up = toggle
+    mouse_scroll_down = iconify
